@@ -2,5 +2,12 @@
 # tasks file for apache
 - name: "installation apache"
   apt:
+#   update_cache: yes
     name: apache2
     state: present
+    
+- name: "activation"
+  service:
+    name: apache2
+    state: started
+    enabled: yes
