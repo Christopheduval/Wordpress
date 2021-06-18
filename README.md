@@ -1,3 +1,3 @@
-Projet d'installation de Wordpress à partir d'ansible
-Node-manager: Debian10
-version ansible 2.10
+#ÍProjet d'installation de Wordpress à partir d'ansible
+#Node-manager: Debian10
+#version ansible 2.10
