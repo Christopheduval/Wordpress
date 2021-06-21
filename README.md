@@ -13,7 +13,8 @@ node client: tests effectués sur ubuntu20
 6. [Synthèse et amélioration du projet](#Synthèse-et-amélioration-du-projet)
 ***
 ## Présentation
-Ce projet a pour but d'automatiser l'installation d'un serveur Wordpress. Il est divisée en plusieurs étapes décrites dans la table des matières. 
+Ce projet a pour but d'automatiser l'installation d'un serveur Wordpress. Il est divisé en plusieurs étapes décrites dans la table des matières.  
+Dans un 1er temps, le déploiement de Wordpress pourra s'effectuer sur des distributions Debian ou Ubuntu. 
 ***
 ## Installation serveur Apache
 création du role apache  
