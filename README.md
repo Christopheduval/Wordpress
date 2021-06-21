@@ -14,9 +14,10 @@ node client: tests effectués sur ubuntu20
 ## Présentation
 ***
 ## Installation serveur Apache
+***
 installation réalisée  
 problème apt-get à résoudre  
 sécurisation du serveur à réaliser  
-****
+***
 ## 
 
