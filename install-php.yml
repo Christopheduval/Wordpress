@@ -1,0 +1,5 @@
+---
+- name: "installation php"
+  hosts: http
+  roles:
+    - role: "php"

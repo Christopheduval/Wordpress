@@ -1,0 +1,12 @@
+---
+# tasks file for php
+- name: "installation php"
+  apt: 
+    name: php-fpm
+    state: present
+
+- name: "lancement du service"
+  service: 
+    name: php7.4-fpm
+    state: started
+    enabled: yes
