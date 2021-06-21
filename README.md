@@ -10,18 +10,19 @@ node client: tests effectués sur ubuntu20
 3. [Installation php](#Installation-php)
 4. [Installation Mysq](#Installation-Mysql)
 5. [Installation wordpress](#Installation-Wordpress)
+6. [Synthèse et amélioration du projet](#Synthèse-et-amélioration-du-projet)
 ***
 ## Présentation
 Ce projet a pour but d'automatiser l'installation d'un serveur Wordpress. Il est divisée en plusieurs étapes décrites dans la table des matières. 
 ***
 ## Installation serveur Apache
-création du role apache
-installation réalisée  
+création du role apache  
+installation apache2 réalisée  
 problème apt-get à résoudre  
 
 
 sécurisation du serveur à réaliser  
-documentation à détailler
+documentation du fonctionnement à détailler
 ***
 ## Installation php
 ***
@@ -29,5 +30,5 @@ documentation à détailler
 ***
 ## Installation Wordpress
 ***
-
+## Synthèse et amélioration du projet
 
