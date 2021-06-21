@@ -6,10 +6,10 @@ node client: tests effectués sur ubuntu20
 ***
 ## Table des matières
 1. [Présentation](#Présentation)
-2. [Installation serveur Apache](#Installation serveur Apache)
-3. [Installation php](#Installation php)
-4. [Installation Mysq](#Installation Mysql)
-5. [Installation wordpress](#Installation Wordpress)
+2. [Installation serveur Apache](#Installation-serveur-Apache)
+3. [Installation php](#Installation-php)
+4. [Installation Mysq](#Installation-Mysql)
+5. [Installation wordpress](#Installation-Wordpress)
 ***
 ## Présentation
 ***
