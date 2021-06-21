@@ -1,12 +1,27 @@
 ---
 # tasks file for php
-- name: "installation php"
+- name: "installation du paquet php-fpm"
   apt: 
     name: php-fpm
     state: present
 
-- name: "lancement du service"
-  service: 
-    name: php7.4-fpm
-    state: started
+- name: "activation du module avec prise en charge du protocole FastCGI"
+  command: /usr/sbin/a2enmod proxy_fcgi
+
+- name: "définition des variables transmises à fcgi"
+  command: /usr/sbin/a2enmod setenvif
+
+- name: "activation du fichier de configuration"
+  command: /usr/sbin/a2enconf php7.4-fpm
+
+- name: "désactivation du module de gestion apache mpm_prefork"
+  command: /usr/sbin/a2dismod mpm_prefork
+
+- name: "activation du module de gestion apache mpm_event"
+  command: /usr/sbin/a2enmod mpm_event
+
+- name: "redémarrage de apache"
+  service:
+    name: apache2 
+    state: restarted
     enabled: yes
