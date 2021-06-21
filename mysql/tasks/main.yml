@@ -1,0 +1,6 @@
+---
+# tasks file for mysql
+  - name: "installation du paquet"
+    apt:
+      name: mysql-server
+      state: present
