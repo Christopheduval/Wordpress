@@ -12,12 +12,16 @@ node client: tests effectués sur ubuntu20
 5. [Installation wordpress](#Installation-Wordpress)
 ***
 ## Présentation
+Ce projet a pour but d'automatiser l'installation d'un serveur Wordpress. Il est divisée en plusieurs étapes décrites dans la table des matières. 
 ***
 ## Installation serveur Apache
-***
+création du role apache
 installation réalisée  
 problème apt-get à résoudre  
+
+
 sécurisation du serveur à réaliser  
+documentation à détailler
 ***
 ## Installation php
 ***
