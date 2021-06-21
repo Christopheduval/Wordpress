@@ -10,5 +10,7 @@ node client: tests effectués sur ubuntu20*
 3- installation Mysql
 4- installation wordpress*
 
-*1-installation serveur apache
+*1-installation serveur apache*
+*   installation réalisée *
+
 
