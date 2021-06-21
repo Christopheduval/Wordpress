@@ -23,11 +23,22 @@ problème apt-get à résoudre
 
 
 sécurisation du serveur à réaliser  
-documentation du fonctionnement à détailler
+documentation du fonctionnement à détailler  
 ***
 ## Installation php
+création du role php  
+installation php en tant que processus FastCGI réalisée  
+version php7.4 installée  
+
+voir pour gérer le changement de version
+documention du fonctionnement à réaliser  
 ***
 ## Installation Mysql
+création du role mysql
+installation réalisée
+
+sécurisation de la connexion à réaliser
+documentation du fonctionnement à réaliser
 ***
 ## Installation Wordpress
 ***
