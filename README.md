@@ -44,4 +44,5 @@ documentation du fonctionnement à réaliser
 ***
 ## Synthèse et amélioration du projet
 création de module pour automatiser l'installation en fonction:  
-1. du nom de domaine  
+1. du nom de domaine 
+2. de l'emplacement du site wordpress  
