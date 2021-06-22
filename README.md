@@ -19,9 +19,9 @@ Dans un 1er temps, le déploiement de Wordpress pourra s'effectuer sur des distr
 ## Installation serveur Apache
 création du role apache  
 installation apache2 réalisée  
+
+
 problème apt-get à résoudre  
-
-
 sécurisation du serveur à réaliser  
 documentation du fonctionnement à détailler  
 ***
@@ -34,13 +34,14 @@ voir pour gérer le changement de version
 documention du fonctionnement à réaliser  
 ***
 ## Installation Mysql
-création du role mysql
-installation réalisée
+création du role mysql  
+installation réalisée  
 
-sécurisation de la connexion à réaliser
-documentation du fonctionnement à réaliser
+sécurisation de la connexion à réaliser  
+documentation du fonctionnement à réaliser  
 ***
 ## Installation Wordpress
 ***
 ## Synthèse et amélioration du projet
-
+création de module pour automatiser l'installation en fonction:  
+1. du nom de domaine  
