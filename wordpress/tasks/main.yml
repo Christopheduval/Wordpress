@@ -7,4 +7,23 @@
   copy:
     src: wordpress.conf
     dest: /etc/apache2/sites-available/wordpress.conf
-    
+
+- name: "activation de l'hote virtuel"
+  command: /usr/sbin/a2ensite wordpress
+
+- name: "rechargement de la configuration apache"
+  service: 
+    name: apache2
+    state: reloaded
+    enabled: yes
+
+- name: "installation de unzip"
+  apt:
+    name: unzip
+    state: present
+
+- name: "téléchargement de la dernière version de wordpress"
+  unarchive:
+    src: https://fr.wordpress.org/wordpress-latest-fr_FR.zip
+    dest: /var/www/html
+    remote_src: yes
