@@ -4,3 +4,13 @@
     apt:
       name: mysql-server
       state: present
+
+  - name: "installation du paquet pymysql nécessaire pour utiliser le module mysql_user"
+    apt:
+      name: python3-pymysql
+      state: present
+
+  - name: "création de la base de données"
+    mysql_db :
+      name: wordpress
+      state: present

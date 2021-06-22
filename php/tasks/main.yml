@@ -5,6 +5,10 @@
     name: php-fpm
     state: present
 
+- name: "installation du paquet php-mysql"
+  apt:
+    name: php-mysql
+
 - name: "activation du module avec prise en charge du protocole FastCGI"
   command: /usr/sbin/a2enmod proxy_fcgi
 

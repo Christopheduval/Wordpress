@@ -1,10 +1,10 @@
 ---
 # tasks file for apache
+
 - name: "installation apache"
   apt:
-#   update_cache: yes
     name: apache2
-    state: present
+    state: latest
     
 - name: "activation"
   service:
