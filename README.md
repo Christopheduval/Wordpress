@@ -31,7 +31,7 @@ création du role php
 installation php en tant que processus FastCGI réalisée  
 version php7.4 installée  
 
-voir pour gérer le changement de version
+voir pour gérer le changement de version  
 documention du fonctionnement à réaliser  
 ***
 ## Installation Mysql
