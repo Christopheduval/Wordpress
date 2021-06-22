@@ -1,0 +1,5 @@
+---
+- name: "installation de wordpress"
+  hosts: http
+  roles:
+    - role: "wordpress"

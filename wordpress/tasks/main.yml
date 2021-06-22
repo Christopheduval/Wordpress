@@ -1,0 +1,10 @@
+---
+# tasks file for wordpress
+- name: "activation du module rewrite"
+  command: /usr/sbin/a2enmod rewrite
+
+- name: "création du fichier de configuration"
+  copy:
+    src: wordpress.conf
+    dest: /etc/apache2/sites-available/wordpress.conf
+    
