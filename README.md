@@ -3,6 +3,7 @@
 Node-manager: Debian10  
 version ansible 2.10  
 node client: tests effectués sur ubuntu20  
+[documentation utilisée](https://doc.ubuntu-fr.org/wordpress)  
 ***
 ## Table des matières
 1. [Présentation](#Présentation)
