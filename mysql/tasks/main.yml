@@ -1,16 +1,17 @@
 ---
 # tasks file for mysql
-  - name: "installation du paquet"
+  - name: "installation du paquet mysql-server"
     apt:
       name: mysql-server
       state: present
 
-  - name: "installation du paquet pymysql nécessaire pour utiliser le module mysql_user"
+  - name: "installation du paquet python3-mysql.connector"
     apt:
-      name: python3-pymysql
+      name: python3-mysql.connector
       state: present
+  
+  - name: "création de la base de données wordpress"
+    command: /usr/bin/mysqladmin create wordpressi
 
-  - name: "création de la base de données"
-    mysql_db :
-      name: wordpress
-      state: present
+  - name: "création d'un utilisateur"
+    command: /usr/bin/mysql -e 'CREATE USER wordpress2' wordpress
