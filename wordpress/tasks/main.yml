@@ -32,7 +32,7 @@
   command: /usr/bin/mysqladmin create "{{wordpress_db}}"
 
 - name: "création d'un utilisateur"
-  command: /usr/bin/mysql -e "CREATE USER 'wordpress' IDENTIFIED BY 'wordpress'"
+  command: /usr/bin/mysql -e "CREATE USER "{{wordpress_user}}" IDENTIFIED BY 'wordpress'"
 
 - name: "connexion à la base"
   command: /usr/bin/mysql -e "USE wordpress"
