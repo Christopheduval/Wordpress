@@ -42,12 +42,16 @@ sécurisation de la connexion à réaliser
 documentation du fonctionnement à réaliser  
 ***
 ## Installation Wordpress
-création de l'hote virtuel pour Wordpress  
+***création de l'hote virtuel pour Wordpress  
 téléchargement de la dernière version de Wordpress  
 
-reste à réaliser modification des droits concernant les fichiers  
-création de la base de données  
-documentation  
+création de la base de données wordpress  
+création de l'administrateur du site  
+
+
+fichier de configuration à réaliser  
+prévoir test si la base est créée  
+documentation à réaliser   
 
 ***
 ## Synthèse et amélioration du projet
