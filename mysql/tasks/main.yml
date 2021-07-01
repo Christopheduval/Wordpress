@@ -11,7 +11,13 @@
       state: present
   
   - name: "création de la base de données wordpress"
-    command: /usr/bin/mysqladmin create wordpressi
+    command: /usr/bin/mysqladmin create wordpress
 
   - name: "création d'un utilisateur"
-    command: /usr/bin/mysql -e 'CREATE USER wordpress2' wordpress
+    command: /usr/bin/mysql -e "CREATE USER 'wordpress' IDENTIFIED BY 'wordpress'"
+
+  - name: "connexion à la base"
+    command: /usr/bin/mysql -e "USE wordpress"
+
+  - name: "ajout de privilège"
+    command: /usr/bin/mysql -e "GRANT ALL ON wordpress.* TO 'wordpress'"
