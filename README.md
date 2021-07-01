@@ -56,6 +56,7 @@ documentation à réaliser
 
 ## Variables
 Nom de la base de données wordpress: wordpress_db
+Nom de l'utilisateur wordpress: wordpress_user
 
 ***
 ## Synthèse et amélioration du projet
