@@ -39,3 +39,8 @@
 
 - name: "ajout de privilège"
     command: /usr/bin/mysql -e "GRANT ALL ON wordpress.* TO 'wordpress'"
+    
+- name: "copie du fichier de configuration wordpress"
+  copy:
+    src: wp-config.php
+    dest: /var/www/html/wordpress/wp-config.php
