@@ -27,3 +27,15 @@
     src: https://fr.wordpress.org/wordpress-latest-fr_FR.zip
     dest: /var/www/html
     remote_src: yes
+    
+- name: "création de la base de données wordpress"
+    command: /usr/bin/mysqladmin create wordpress
+
+- name: "création d'un utilisateur"
+    command: /usr/bin/mysql -e "CREATE USER 'wordpress' IDENTIFIED BY 'wordpress'"
+
+- name: "connexion à la base"
+    command: /usr/bin/mysql -e "USE wordpress"
+
+- name: "ajout de privilège"
+    command: /usr/bin/mysql -e "GRANT ALL ON wordpress.* TO 'wordpress'"
