@@ -1,0 +1,8 @@
+---
+- name: "Installation de wordpress"
+  tasks:
+    - name: "installation de wordpress"
+      wordpress:
+      register: resultat
+    - debug: var=resultat
+     
