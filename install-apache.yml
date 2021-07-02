@@ -1,5 +1,0 @@
----
-- name: "installation apache"
-  hosts: http, debian
-  roles:
-    - role: "apache"

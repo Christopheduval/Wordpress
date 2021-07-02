@@ -1,5 +1,0 @@
----
-- name: "installation mysql"
-  hosts: http
-  roles:
-    - role: "mysql"

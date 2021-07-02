@@ -2,4 +2,7 @@
 - name: "installation de wordpress"
   hosts: http
   roles:
-    - role: "wordpress"
+    - apache
+    - php
+    - mysql
+    - wordpress
