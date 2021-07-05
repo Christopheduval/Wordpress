@@ -1,6 +1,6 @@
 ---
 - name: "installation de wordpress"
-  hosts: http
+  hosts: all 
   roles:
     - apache
     - php
