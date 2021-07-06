@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 
-from ansible.module_itils.basic import *
+from ansible.module_utils.basic import *
 
 def main():
     module = AnsibleModule(
