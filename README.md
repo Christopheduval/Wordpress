@@ -61,5 +61,5 @@ Mot de passe de l'utilisateur wordpress: wordpress_password
 ***
 ## Synthèse et amélioration du projet
 création de module pour automatiser l'installation en fonction:  
-1. du nom de domaine 
+1. du nom de la base de données wordpress, de son utilisateur de son mot de passe
 2. de l'emplacement du site wordpress  
