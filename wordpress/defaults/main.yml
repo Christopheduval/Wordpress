@@ -1,5 +1,5 @@
 ---
 # nom de la base de données
-wordpress_db: "wordpress"
+wordpress_bd: "wordpress"
 wordpress_user: "wordpress"
 wordpress_password: "wordpress"
