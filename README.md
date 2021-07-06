@@ -44,13 +44,12 @@ documentation du fonctionnement à réaliser
 ## Installation Wordpress
 création de l'hote virtuel pour Wordpress  
 téléchargement de la dernière version de Wordpress  
-
 création de la base de données wordpress  
 création de l'administrateur du site  
+fichier de configuration modèle réalisé  
 
-
-fichier de configuration à réaliser  
-prévoir test si la base est créée  
+prévoir test si la base est créée
+personnalisation du fichier de config à réaliser  
 documentation à réaliser   
 ***
 
