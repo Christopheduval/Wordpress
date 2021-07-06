@@ -5,8 +5,3 @@
       name: mysql-server
       state: present
 
-  - name: "installation du paquet python3-mysql.connector"
-    apt:
-      name: python3-mysql.connector
-      state: present
-
