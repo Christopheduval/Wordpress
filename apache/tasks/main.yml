@@ -1,5 +1,7 @@
 ---
 # tasks file for apache
+#- name: "mise à jour apt"
+#  command: /usr/bin/apt update
 
 - name: "installation apache"
   apt:

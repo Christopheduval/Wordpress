@@ -29,16 +29,16 @@
     remote_src: yes
     
 - name: "création de la base de données wordpress"
-  command: /usr/bin/mysqladmin create "{{wordpress_db}}"
+  command: /usr/bin/mysqladmin create wordpress
 
 - name: "création d'un utilisateur"
-  command: /usr/bin/mysql -e "CREATE USER "{{wordpress_user}}" IDENTIFIED BY '"{{wordpress_password}}"'"
+  command: /usr/bin/mysql -e "CREATE USER 'wordpress' IDENTIFIED BY 'wordpress'"
 
 - name: "connexion à la base"
-  command: /usr/bin/mysql -e "USE "{{wordpress_db}}""
+  command: /usr/bin/mysql -e "USE wordpress"
 
 - name: "ajout de privilège"
-  command: /usr/bin/mysql -e "GRANT ALL ON "{{wordpress_db}}".* TO '"{{wordpress_user}}"'"
+  command: /usr/bin/mysql -e "GRANT ALL ON wordpress.* TO 'wordpress'"
     
 - name: "copie du fichier de configuration wordpress"
   copy:

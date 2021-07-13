@@ -2,9 +2,7 @@
 - name: "installation de wordpress"
   hosts: all 
 
-  vars_prompt:
-    - name: wordpress_db
-      prompt: "nom de la base wordpress"
+
 
   roles:
     - apache
