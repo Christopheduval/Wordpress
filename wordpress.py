@@ -16,7 +16,7 @@ variable_manager = VariableManager(loader=loader, inventory=inventory)
 playbook_path = 'install-wordpress.yml'
 
 if not os.path.exists(playbook_path):
-    print '[INFO] The playbook does not exist'
+    print ('[INFO] The playbook does not exist')
     sys.exit()
 
 Options = namedtuple('Options', ['listtags', 'listtasks', 'listhosts', 'syntax', 'connection','module_path', 'forks', 'remote_user', 'private_key_file', 'ssh_common_args', 'ssh_extra_args', 'sftp_extra_args', 'scp_extra_args', 'become', 'become_method', 'become_user', 'verbosity', 'check','diff'])
