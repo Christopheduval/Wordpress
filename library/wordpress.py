@@ -21,21 +21,21 @@ def creation_fichier_conf(wordpress_db,wordpress_user,wordpress_password):
         txt = fichier_source.readline()
         fichier_destination.write(txt)
     
-    txt = "define ( 'DB_NAME', 'test' );"
+    txt = "define ( 'DB_NAME', 'wordpress' );"
     fichier_destination.write(txt)
     
     for i in range(4):
         txt = fichier_source.readline()
         fichier_destination.write('')
         
-    txt = "define ( 'DB_NAME', 'test2' );"
+    txt = "define ( 'DB_NAME', 'wordpress' );"
     fichier_destination.write(txt)
  
     for i in range(4):
         txt = fichier_source.readline()
         fichier_destination.write('')
         
-    txt = "define ( 'DB_NAME', 'test3' );"
+    txt = "define ( 'DB_NAME', 'wordpress' );"
     fichier_destination.write(txt)
     
     for i in range(67):
