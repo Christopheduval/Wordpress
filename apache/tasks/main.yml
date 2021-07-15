@@ -1,8 +1,8 @@
 ---
 # tasks file for apache
-#- name: "mise à jour apt"
-#  apt:
-#    update_cache: yes
+
+#- name: "mise a jour depot"
+#  command: /usr/bin/apt-get update -m --ignore-missing
 
 - name: "installation apache"
   apt:
