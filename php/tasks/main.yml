@@ -16,7 +16,7 @@
   command: /usr/sbin/a2enmod setenvif
 
 - name: "activation du fichier de configuration"
-  command: /usr/sbin/a2enconf php{{php_version}}-fpm
+  command: /usr/sbin/a2enconf php7.4-fpm
 
 - name: "désactivation du module de gestion apache mpm_prefork"
   command: /usr/sbin/a2dismod mpm_prefork
