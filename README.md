@@ -32,15 +32,13 @@ création du role mysql: installation de la dernière version mysql
 
 ***
 ## Installation Wordpress
-création de l'hote virtuel pour Wordpress  
-téléchargement de la dernière version de Wordpress  
-création de la base de données wordpress  
-création de l'administrateur du site  
-fichier de configuration modèle réalisé  
-
-prévoir test si la base est créée
-personnalisation du fichier de config à réaliser  
-documentation à réaliser   
+Le role wordpress permet d'effectuer les étapes suivantes:
+  - création de l'hote virtuel pour Wordpress
+  - téléchargement de la dernière version de Wordpress
+  - création de la base de données wordpress
+  - création de l'administrateur du site
+  - création du fichier de configuration  
+   
 ***
 
 ## Variables
