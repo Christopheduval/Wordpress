@@ -4,4 +4,9 @@
     apt:
       name: mysql-server
       state: present
+      
+  - name: "redémarrage du service"
+    service:
+      name: mysql
+      state: restarted
 
