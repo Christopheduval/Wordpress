@@ -1,7 +1,7 @@
-# Installation automatisée de Wordpress
+# Installation automatisée de Wordpress avec Ansible
 ***
 Node-manager: Debian10  
-version ansible 2.10  
+version ansible 4  
 node client: tests effectués sur ubuntu20  
 [documentation utilisée](https://doc.ubuntu-fr.org/wordpress)  
 ***
@@ -15,31 +15,21 @@ node client: tests effectués sur ubuntu20
 ***
 ## Présentation
 Ce projet a pour but d'automatiser l'installation d'un serveur Wordpress. Il est divisé en plusieurs étapes décrites dans la table des matières.  
-Dans un 1er temps, le déploiement de Wordpress pourra s'effectuer sur des distributions Debian ou Ubuntu. 
+La version 1 du projet concerne le déploiement de Wordpress sur des distributions Ubuntu. 
 ***
+
 ## Installation serveur Apache
-création du role apache  
-installation apache2 réalisée  
-
-
-problème apt-get à résoudre  
-sécurisation du serveur à réaliser  
-documentation du fonctionnement à détailler  
+création du role apache: installation d'un serveur apache2
+ 
 ***
 ## Installation php
-création du role php  
-installation php en tant que processus FastCGI réalisée  
+création du role php: installation php en tant que processus FastCGI réalisée  
 version php7.4 installée  
 
-voir pour gérer le changement de version  
-documention du fonctionnement à réaliser  
 ***
 ## Installation Mysql
-création du role mysql  
-installation réalisée  
+création du role mysql: installation de la dernière version mysql
 
-sécurisation de la connexion à réaliser  
-documentation du fonctionnement à réaliser  
 ***
 ## Installation Wordpress
 création de l'hote virtuel pour Wordpress  
@@ -60,6 +50,12 @@ Mot de passe de l'utilisateur wordpress: wordpress_password
 
 ***
 ## Synthèse et amélioration du projet
-création de module pour automatiser l'installation en fonction:  
-1. du nom de la base de données wordpress, de son utilisateur de son mot de passe
-2. de l'emplacement du site wordpress  
+Le script wordpress.py permet de:
+  - de mettre à jour le fichier inventaire.ini
+  - de mettre a jour le fichier /etc/hosts (nécessité d'avoir les droits sur ce fichier)
+  - de vérifier que les noeud sont joignables
+  - de copier une clé ssh sur les noeuds (il faut dans un 1er temps créer cette clé sur le node-manager avec la commande ssh-keygen -t ecdsa)
+  - de personnaliser l'installation en saisissant les valeurs des variables suivantes:
+    - wordpress_db: nom de la base de données wordpress
+    - wordpress_user: identifiant de connexion à la base
+    - wordpress_password: mot de passe de connexion
