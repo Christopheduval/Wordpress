@@ -2,16 +2,21 @@
 
 import os
 
+#fonction pour effacer l'écran
+def EffaceEcran():
+    os.system("clear")
 
 #mise a jour du fichier inventaire.ini
-
+EffaceEcran()
 print("Voici le contenu actuel du fichier inventaire:\n")
 
 with open('inventaire.ini') as f:
     for line in f:
         print(line)
 
+
 rep=input("Voulez-vous ajouter un noeud à l'inventaire ? (O/N) ")
+EffaceEcran()
 
 while rep != "N":
     host=input("Entrer le nom du noeud: ")
@@ -36,6 +41,7 @@ with open('inventaire.ini') as f:
 
 #copie de clé ssh sur les nodes
 #boucle sur l'ensemble des nodes du fichier inventaire
+EffaceEcran()
 print("copie de la clé publique ssh sur les nodes")
 
 with open('inventaire.ini') as f:
@@ -49,6 +55,7 @@ wordpress_db = "wordpress"
 wordpress_user = "wordpress"
 wordpress_password = "wordpress"
 
+EffaceEcran()
 reponse=input("Souhaitez-vous personnaliser l'installation de wordpress ? (O/N) (Par défaut, la base de donnée créée sera wordpress avec un utilisateur et un mot de passe identique) : ")
 if reponse == "O":
     wordpress_db=input("saisir le nom de la base de données: ")
