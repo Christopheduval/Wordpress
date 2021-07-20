@@ -7,6 +7,7 @@ def EffaceEcran():
     os.system("clear")
 
 def Menu():
+    EffaceEcran()
     print("1. Afficher le contenu du fichier inventaire")
     print("2. Effacer le contenu du fichier inventaire")
     print("3. Ajouter des noeuds à l'inventaire")
