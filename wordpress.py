@@ -52,6 +52,7 @@ def EffaceInventaire():
     EffaceEcran()
     with open('inventaire.ini', 'w') as f:
         f.write("")
+    print("Le fichier inventaire.ini est maintenant vide")
     print("Tapez sur la touche Entrée pour retourner au menu principal")
     input()
     Menu()
@@ -81,8 +82,8 @@ def TestConnexion():
     print("")
     with open('inventaire.ini') as f:
         for line in f:
-            os.system("ping -c 3"+line)
-            input()
+            os.system("ping -c 3 "+line)
+            print("\n")
     print("Tapez sur la touche Entrée pour retourner au menu principal")
     input()
     Menu()
