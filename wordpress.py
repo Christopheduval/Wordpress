@@ -54,6 +54,8 @@ def EffaceInventaire():
     print("Tapez sur la touche Entrée pour retourner au menu principal")
     input()
     Menu()
+   
+def AjoutInventaire():
     EffaceEcran()
     rep = "O"
     while rep != "N":
@@ -78,7 +80,7 @@ def TestConnexion():
     print("")
     with open('inventaire.ini') as f:
         for line in f:
-            os.system("ping -c 3 -q "+line)
+            os.system("ping -c 3 "+line)
     print("Tapez sur la touche Entrée pour retourner au menu principal")
     input()
     Menu()
