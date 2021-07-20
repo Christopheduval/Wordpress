@@ -29,9 +29,9 @@ def Menu():
     elif choix==5:
         CopieCle()
     elif choix==6:
-        CopieCle()
+        PersonnaliseWordpress()  
     elif choix==7:
-        PersonnaliseWordpress()        
+        ExecutePlaybook()       
     elif choix==8:
         return
 
