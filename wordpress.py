@@ -78,7 +78,7 @@ def AjoutInventaire():
 #verification de la connexion aux nodes
 def TestConnexion():
     EffaceEcran()
-    print("test de ping")
+    print("test de ping ")
     print("")
     with open('inventaire.ini') as f:
         for line in f:
