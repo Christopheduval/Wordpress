@@ -1,2 +1,4 @@
-#Journal des modification
-***1.1  ajout de menu***
+#Journal des modification  
+***VERSION 1***
+
+***VERSION 1.1***
