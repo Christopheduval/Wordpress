@@ -80,7 +80,7 @@ def TestConnexion():
     print("")
     with open('inventaire.ini') as f:
         for line in f:
-            os.system("ping -c 3 "+line)
+            os.system("ping -c 3"+line)
     print("Tapez sur la touche Entrée pour retourner au menu principal")
     input()
     Menu()
