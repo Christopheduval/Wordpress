@@ -58,3 +58,7 @@ Le script wordpress.py permet de:
     - wordpress_user: identifiant de connexion à la base
     - wordpress_password: mot de passe de connexion
   - d'effectuer le déploiement sur les nodes ajoutés au fichier inventaire.ini
+
+Les futures évolutions devront permettre:  
+  - d'effectuer des déploiements sur d'autres distributions Linux
+  - d'automatiser complètement l'installation d'un site Wordpress
