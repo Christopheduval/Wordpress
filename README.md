@@ -2,7 +2,7 @@
 ***
 Node-manager: Debian10  
 version ansible 4  
-node client: tests effectués sur ubuntu20  
+node client: tests effectués sur ubuntu21  
 [documentation utilisée](https://doc.ubuntu-fr.org/wordpress)  
 ***
 ## Table des matières
@@ -15,7 +15,7 @@ node client: tests effectués sur ubuntu20
 ***
 ## Présentation
 Ce projet a pour but d'automatiser l'installation d'un serveur Wordpress. Il est divisé en plusieurs étapes décrites dans la table des matières.  
-La version 1 du projet concerne le déploiement de Wordpress sur des distributions Ubuntu. 
+La version 1 du projet concerne le déploiement de Wordpress sur des distributions Ubuntu Server 21. 
 ***
 
 ## Installation serveur Apache
@@ -57,3 +57,8 @@ Le script wordpress.py permet de:
     - wordpress_db: nom de la base de données wordpress
     - wordpress_user: identifiant de connexion à la base
     - wordpress_password: mot de passe de connexion
+  - d'effectuer le déploiement sur les nodes ajoutés au fichier inventaire.ini
+
+Les futures évolutions devront permettre:  
+  - d'effectuer des déploiements sur d'autres distributions Linux
+  - d'automatiser complètement l'installation d'un site Wordpress
